@@ -19,5 +19,5 @@ for ($int = 0; $int <= 1337; $int++ ) {
     else {
         echo $int . "</br>";
     }
-   
+  
 }
