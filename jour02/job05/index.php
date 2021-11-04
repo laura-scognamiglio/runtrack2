@@ -4,7 +4,7 @@
 
 for ($int = 2; $int <= 1000; $int++) {
 
-    $x = 0 ;
+    $x = 0;
     for ($i = 1; $i <= $int; $i++) {
         
         if($int % $i == 0){
