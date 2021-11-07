@@ -14,7 +14,7 @@ if (isset($_POST['nbr']) == true){
 
     foreach($_POST as $key => $value){
         
-            if ($_POST['nbr'] %2 == 0)
+            if ($_POST['number'] %2 == 0)
             echo "Nombre paire" ;
             else {
                 echo "Nombre impair";
