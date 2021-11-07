@@ -1,4 +1,4 @@
-<form action="index.php" method="GET"> 
+<form action="index.php" method="§_GET"> 
     <label for="nom">Nom : </label>
     <input type="text" name="nom"><br>
     <label for="prenom">Prénom : </label>
