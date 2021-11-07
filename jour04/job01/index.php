@@ -1,5 +1,6 @@
 <?php
-
+// var_dump($_GET['prenom']);
+// var_dump($_GET['nom']);
 // $_GET['nom'];
 // $_GET['prenom'];
 
@@ -21,8 +22,7 @@ $var = array(
 </form>
 
 <?php
-// var_dump($_GET['prenom']);
-// var_dump($_GET['nom']);
+
 
 foreach($_GET as $key => $value){
     echo $key . "<br>";
