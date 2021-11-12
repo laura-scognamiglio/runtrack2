@@ -14,18 +14,24 @@ echo '</pre>';
     
     <thead>
         <tr>
+            <td>id</td>
             <td>prenom</td>
             <td>nom</td>
             <td>naissance</td>
+            <td>sexe</td>
+            <td>email</td>
             
         </tr>
     </thead>
     <tbody>
     <?php foreach($student as $students): ?>
         <tr>
+            <td></td>
             <td><?=$students['prenom'];?></td>
             <td><?=$students['nom'];?></td>
             <td><?=$students['naissance'];?></td>
+            <td></td>
+            <td></td>
             
         </tr>
     <?php endforeach;?>
