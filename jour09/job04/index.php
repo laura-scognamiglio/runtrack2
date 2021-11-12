@@ -11,9 +11,9 @@ echo '</pre>';
 
 <table>
 
-    
     <thead>
         <tr>
+            <td>id</td>
             <td>prenom</td>
             <td>nom</td>
             <td>naissance</td>
@@ -24,6 +24,7 @@ echo '</pre>';
     <tbody>
     <?php foreach($student as $students): ?>
         <tr>
+            <td><?=$students['id'];?></td>
             <td><?=$students['prenom'];?></td>
             <td><?=$students['nom'];?></td>
             <td><?=$students['naissance'];?></td>
