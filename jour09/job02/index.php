@@ -13,8 +13,9 @@ echo '</pre>';
 
     <thead>
         <tr>
-            
+            <td>id</td>
             <td>nom</td>
+            <td>id_etage</td>
             <td>capacités</td>
             
         </tr>
@@ -22,7 +23,9 @@ echo '</pre>';
     <tbody>
     <?php foreach($salle as $salles): ?>
         <tr>
+            <td></td>
             <td><?=$salles['nom'];?></td>
+            <td></td>
             <td><?=$salles['capacites'];?></td>
             
         </tr>
