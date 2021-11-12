@@ -14,7 +14,7 @@ echo '</pre>';
     
     <thead>
         <tr>
-            <td>superficie_totale</td>
+            <td>salles</td>
             
         </tr>
     </thead>
