@@ -47,7 +47,7 @@ echo '</pre>';
     <thead>
         <tr>
             
-            <td>Les etudiants les plus agés</td>
+            <td>Les etudiants nées entre 1998 et 2008</td>
             
         </tr>
     </thead>
