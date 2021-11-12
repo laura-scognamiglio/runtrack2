@@ -1,0 +1,1 @@
+SELECT AVG(`capacites`) FROM `salles`;

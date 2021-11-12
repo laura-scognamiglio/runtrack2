@@ -11,27 +11,24 @@ afficher le formulaire de connexion. -->
 
 <?php
 if(!isset($_COOKIE['user'])) {
-    echo "<input type='submit' name='deconnexion' value='deco'>";
-    setcookie('user',1,time()+ 365*24*3600);
-}
+     setcookie('user',1,time()+ 365*24*3600);
 
-if (isset($_POST["prenom"]) && isset($_POST["connexion"]));{
-    echo "Bonjour " . $_POST["prenom"] . " !";
-    foreach ($_POST as $value ){
+    echo('<form action= "index.php" method= "POST">
+    <input name="prenom"  type= "text">
+    <input type="submit" name="connexion" value="connexion"> 
+    <!-- <input type="submit" name="reset" value="reset"> -->
+    </form>');
+    if(isset($_POST["prenom"]) && isset($_POST["connexion"])){
+    echo 'Bonjour ' . $_POST["prenom"] . '!' ;}
+} else {
+    echo ('cc'. $_COOKIE['user']);
+    echo ('<form action= "index.php" method= "POST">
+         <input type="submit" name="deco" value="deco">
+         </form>');
+         if(isset($_POST['deco'])){
+    unset ($_COOKIE['user']);
+        //var_dump($_COOKIE['user']);
         
     }
 }
 
-
-
-
-?>
-
-
-
-<form action= "index.php" method= "POST">
-    <input name="prenom"  type= "text">
-   <input type="submit" name="connexion" value="connexion"> 
-   <!-- <input type="submit" name="reset" value="reset"> -->
-    
-</form>
