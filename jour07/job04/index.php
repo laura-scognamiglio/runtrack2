@@ -10,25 +10,33 @@ afficher le formulaire de connexion. -->
 
 
 <?php
-if(!isset($_COOKIE['user'])) {
-     setcookie('user',1,time()+ 365*24*3600);
-
-    echo('<form action= "index.php" method= "POST">
-    <input name="prenom"  type= "text">
-    <input type="submit" name="connexion" value="connexion"> 
-    <!-- <input type="submit" name="reset" value="reset"> -->
-    </form>');
-    if(isset($_POST["prenom"]) && isset($_POST["connexion"])){
-    echo 'Bonjour ' . $_POST["prenom"] . '!' ;}
-} else {
-    echo ('cc'. $_COOKIE['user']);
-    echo ('<form action= "index.php" method= "POST">
-         <input type="submit" name="deco" value="deco">
-         </form>');
-         if(isset($_POST['deco'])){
-    unset ($_COOKIE['user']);
-        //var_dump($_COOKIE['user']);
-        
-    }
+if (!isset($_COOKIE['user'])){
+    setcookie('user',1,time()+ 365*24*3600);
 }
+
+else {
+    (isset($_POST["prenom"]) && isset($_POST["connexion"]));
+        echo "Bonjour " . $_POST["prenom"] . " !";
+};
+
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="formtohide" >
+    <form action= "index.php" method= "POST" class= "formtohide">
+        <input name="prenom"  type= "text">
+    <input type="submit" name="connexion" value="connexion"> 
+    </form>
+</div>
+</body>
+</html>
+
 

@@ -14,10 +14,6 @@ var_dump($_COOKIE);
 if(isset($_POST["reset"])==true){
     setcookie('nbvisites');
 }
-
-
-
-
 <form action= "index.php" method= "POST"> 
     <input name= "reset" type= "submit" value= "Reset">
 </form> -->

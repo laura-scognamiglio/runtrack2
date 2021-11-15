@@ -36,7 +36,7 @@ echo '</pre>';
 <table>
     <thead>
         <tr>
-            <td>nom des salles dans les etages</td>
+            <td>nom des salles et les etages</td>
         </tr>
     </thead>
     <tbody>
